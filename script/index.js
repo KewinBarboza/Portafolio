@@ -13,3 +13,25 @@ $(document).ready(function(){
         })
     })
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+window.onscroll = function() {
+    var element = document.getElementById("navbar-sombra");
+
+    if(window.scrollY > '700'){
+        console.log('600');
+        element.classList.add("menuSombra");
+        element.classList.add("fixed-top");
+    }else if(window.scrollY < '700'){
+        element.classList.remove("menuSombra"); 
+    }
+};
