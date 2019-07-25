@@ -190,7 +190,11 @@ section {
     box-shadow: 0 0 4px 0px #6d6d6d;
     transition: 1s;
   }
-
+  .sombra{
+      transition: 1s;
+  }
   .sombra:hover{
     box-shadow: 0 0 4px 0px #6d6d6d;
+    opacity: 0.5;
+    transform: scale(1.1,1.1);
   }
