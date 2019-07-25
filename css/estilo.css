@@ -186,8 +186,11 @@ section {
 	width: 60%;
 }
 .menuSombra{
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
     box-shadow: 0 0 4px 0px #6d6d6d;
-    transition: 0.5s;
-    
+    transition: 1s;
+  }
+
+  .sombra:hover{
+    box-shadow: 0 0 4px 0px #6d6d6d;
   }
