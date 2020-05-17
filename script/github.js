@@ -14,7 +14,7 @@ function cardRepos(data){
     contentRepos.innerHTML += `
       <div class="col-3 mt-5">
         <div class="card shadow border-0 h-100">
-          <img src="../imagenes/${nameImage++}.jpg" class="card-img-top" height="150" width="100" alt="${repos.name}">
+          <img src="./imagenes/${nameImage++}.jpg" class="card-img-top" height="150" width="100" alt="${repos.name}">
           <div class="card-body px-2">
             <h6 class="card-title mb-1">${repos.name}</h5>
             <p class="card-text mb-1">${repos.description}</p>
